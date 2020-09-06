@@ -63,6 +63,9 @@ export class ItemPage {
 
   renderComments(item) {
     const items = this.store.get("items");
+    if (!item.kids || !item.kids.length) {
+      return "";
+    }
     const comments = item.kids.map((kidId) => items[kidId]).filter(Boolean);
 
     if (!comments.length) {
