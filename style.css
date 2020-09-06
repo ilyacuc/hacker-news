@@ -1,0 +1,132 @@
+:root {
+  --main-text-color: #e4ddd4;
+  --primary-color: #ff6601;
+  --background-color: #1f1b18;
+}
+
+html,
+body {
+  font-family: -apple-system, system-ui, Roboto, Arial, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  word-break: break-all;
+}
+
+.header {
+  font-size: 22px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.menu {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.menu-item {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu-item:not(:last-of-type):after {
+  display: inline-block;
+  content: "|";
+  margin: 0 5px;
+}
+
+.menu-item a {
+  color: var(--main-text-color);
+}
+
+.menu-item a:hover {
+  color: var(--primary-color);
+}
+
+.list-item {
+  padding: 18px 5px;
+}
+
+.list-item__title {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.list-item__description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff5e;
+}
+
+.list-item__preview {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.list-item__link {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.show-more-container {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.show-more-button {
+  display: inline-block;
+  color: var(--primary-color);
+  padding: 5px 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.item__description {
+  color: #ffffff5e;
+}
+
+.item__link {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.item__content {
+  margin-top: 10px;
+}
+
+.comments__title {
+  margin-top: 40px;
+}
+
+.comment {
+  margin-bottom: 30px;
+}
+
+.comment__description {
+  color: #ffffff5e;
+  font-size: 14px;
+}
+
+.comment__content {
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
